@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../assets/pattern2.png);
+	background-attachment: cover;
+	background-size: center;
+	background-position: 0 -250px;
+}
+
+.profile {
+	position: absolute;
+	z-index: 1;
+	margin: 200px 300px;
+}
+
+.bg-pro {
+	background-color: rgba(155,155,155,0.7);
+	height: 50px;
+	width: 150px;
+	transform: skewX(-25deg);
+	transition: 1s;
+}
+
+.bg-pro h1 {
+	font-size: 25px;
+	margin: 0;
+	line-height: 50px;
+	transform: skewX(25deg);
+	text-align: center;
+	transition: 1s;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+}
+
+.profile:hover .bg-pro {
+	margin-left: 750px;
+	height: 70px;
+	width: 200px;
+	transform: skewX(25deg);
+}
+
+.profile:hover .bg-pro h1 {
+	font-size: 35px;
+	line-height: 70px;
+	transform: skewX(-25deg);
+}
+
+hr {
+  margin-top: 1rem;  
+  margin-bottom: 1rem;  
+  box-sizing: content-box;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.wall {
+	height: 600px;
+	width: 100%;
+	background-image: url(../assets/forrest.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 -250px;
+	background-repeat: no-repeat;
+	transition: 1s;
+}
+
+.box-bio {
+	position: absolute;
+	background-color: #32D681;
+	color: #fff;
+	left: 15%;
+	right: 15%;
+	margin-top: 300px;
+	height: 400px;
+	z-index: 1;
+	transition: 0.5s;
+	overflow: hidden;
+}
+
+.box-bio:hover ~ .wall{
+	filter: blur(2px);
+}
+.box-bio:hover {
+	margin-top: 290px;
+	height: 420px;
+	left: 14%;
+	right: 14%;
+}
+.bio-data {
+	background: transparent;
+	height: 100%;
+	width: 60%;
+	display: inline-block;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	z-index: 1;
+}
+
+td {
+	padding: 5px 55px 5px 0;
+}
+
+.foto {
+	display: inline-block;
+	height: 100%;
+	width: 40%;
+	right: 0;
+	position: absolute;
+	z-index: 2;
+}
+
+.foto img {
+	height: 450px;
+}
+
+.skill {
+	min-height: 600px;
+	display: inline-block;
+}
+
+.case-skill {
+	margin: 300px 300px 0px;
+}
+
+.bg-skill {
+	background-color: rgba(200,200,200,0.5);
+	height: 50px;
+	width: 175px;
+	transform: skewX(-25deg);
+	transition: 0.5s;
+}
+
+.bg-skill h1 {
+	color: #fff;
+	font-size: 25px;
+	margin: 0;
+	line-height: 50px;
+	transform: skewX(25deg);
+	text-align: center;
+	transition: 1s;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+}
+
+.skill-box {
+	width: 100%;
+	height: 300px;
+	background-color: #476CD5;
+	margin-top: 35px;
+	left: 15%;
+}
+
+.case-skill:hover .bg-skill {
+	margin-left: 750px;
+}
+
+.skill-box:hover{
+	margin-left: 750px;
+}
